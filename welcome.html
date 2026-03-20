@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Pulse - Home</title>
+    <!---------------------------- Bootstrap CSS -------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---------------------------- iconify-icon -------------------------------------->
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <!---------------------------- SheetJS Library --------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!--------------------------- Custom CSS ---------------------------------------->
+    <link rel="stylesheet" href="/CSS/form.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid w-containerfluid">
+            <nav class="navbar  navbar-expand-lg navbar-dark ">
+                <div class="container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <iconify-icon icon="fe:bar" style="color: white;" width="28" height="28"
+                            class="baricon"></iconify-icon>
+                    </button>
+                    <div class="logo">
+<a class="navbar-brand" href="form.html">Study Pulse</a>
+                    </div>
+                    <div class="navbarnav d-inline-flex">
+                        <ul
+                            class="  navbar-nav mr-auto w-100  d-sm-none d-md-none d-lg-inline-flex d-none justify-content-end ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+<li class="nav-item">
+                                <a class="nav-link" href="courses.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-logout" href="form.html">Logout</a>
+                            </li>
+                        </ul>
+                        <ul
+                            class="navbar-nav navbarul navbar-icon d-md-inline-flex d-sm-inline-flex d-inline-flex align-items-center">
+                            <li class="nav-item person-icon">
+                                <iconify-icon icon="octicon:feed-person-16" style="color: white;" width="24"
+                                    height="24"></iconify-icon>
+                            </li>
+                            <li class="nav-item user">
+                                <span id="uname"></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="offcanvas offcanvas-start bg-canvas" id="navbarOffcanvas" tabindex="-1"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel"></h5>
+                            <button type="button" class="btn-close  btn-close-white text-reset"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+<div class="offcanvas-body">
+                            <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <a class="menu-item m-3" aria-current="page" href="#">Home</a>
+                                <a class="menu-item m-3" href="courses.html">Courses</a>
+                                <a class="menu-item m-3" href="about.html">About</a>
+                                <a class="menu-item m-3" href="blog.html">Blog</a>
+                                <a class="menu-item m-3" href="contact.html">Contact</a>
+                                <a class="menu-item m-3 btn-logout" href="form.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row w-section">
+<div class="col-lg-6  w-head text-white">
+                        <h2>Welcome to Study Pulse</h2>
+                        <p class="text-light">Discover a world of learning with our comprehensive study materials, video tutorials, and interactive courses designed for Grade 1-5 students. Start your educational journey today!</p>
+                        <a href="courses.html" class="btn w-btn">View Courses</a>
+
+                    </div>
+                    <div class="col-lg-6  w-img img-fluid">
+                        <img src="/images/welcome-img.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="JS/excelHandler.js"></script>
+    <script src="./JS/login.js"></script>
+
+    <script>
+        // Get the username from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+
+        if (username) {
+            // Display the username wherever you want in your welcome.html page
+            document.getElementById('uname').innerHTML = username
+        }
+
+    </script>
+</body>
+
+</html>

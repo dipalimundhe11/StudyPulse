@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Study Pulse</title>
+    <!---------------------------- Bootstrap CSS -------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---------------------------- Font Awesome -------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!---------------------------- Google Fonts ------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!---------------------------- Custom CSS -------------------------------------->
+    <link rel="stylesheet" href="CSS/courses.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .blog-hero {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            padding: 80px 0;
+            color: white;
+        }
+        .blog-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-card-body {
+            padding: 20px;
+        }
+        .blog-category {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .category-education {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        .category-events {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        .category-activities {
+            background: #e8f5e9;
+            color: #388e3c;
+        }
+        .blog-date {
+            color: #666;
+            font-size: 14px;
+        }
+        .blog-date i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------------------ Header Section -------------------------------->
+    <header class="courses-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+<a class="navbar-brand" href="welcome.html">Study Pulse</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="welcome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-logout" href="form.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="blog-hero text-center">
+            <div class="container">
+                <h1>Our Blog</h1>
+                <p class="lead">Stay updated with latest news, events and activities</p>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------------ Blog Section -------------------------------->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+<!------------------------------ Blog Post 1 -------------------------------->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop" alt="Blog Image">
+                        <div class="blog-card-body">
+                            <span class="blog-category category-education">Education</span>
+                            <h4>New STEM Program Launching This Year</h4>
+                            <p class="blog-date"><i class="fas fa-calendar-alt"></i> January 15, 2026</p>
+                            <p>We are excited to announce our new STEM program that will provide students with hands-on experience in science, technology, engineering, and mathematics.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------ Blog Post 2 -------------------------------->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1544531696-b9432191c540?w=400&h=250&fit=crop" alt="Blog Image">
+                        <div class="blog-card-body">
+                            <span class="blog-category category-events">Events</span>
+                            <h4>Annual Sports Day 2026</h4>
+                            <p class="blog-date"><i class="fas fa-calendar-alt"></i> January 10, 2026</p>
+                            <p>Our annual sports day was a huge success! Students participated in various events and showcased their athletic talents. Congratulations to all the winners!</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------ Blog Post 3 -------------------------------->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=250&fit=crop" alt="Blog Image">
+                        <div class="blog-card-body">
+                            <span class="blog-category category-activities">Activities</span>
+                            <h4>Art Exhibition Showcase</h4>
+                            <p class="blog-date"><i class="fas fa-calendar-alt"></i> January 5, 2026</p>
+                            <p>Our young artists displayed their incredible artwork in the annual exhibition. The creativity and talent displayed by students was truly inspiring.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------ Blog Post 4 -------------------------------->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=250&fit=crop" alt="Blog Image">
+                        <div class="blog-card-body">
+                            <span class="blog-category category-education">Education</span>
+                            <h4>Parent-Teacher Conference</h4>
+                            <p class="blog-date"><i class="fas fa-calendar-alt"></i> December 28, 2025</p>
+                            <p>Join us for our upcoming parent-teacher conference to discuss your child's progress and academic goals for the upcoming semester.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------ Blog Post 5 -------------------------------->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop" alt="Blog Image">
+                        <div class="blog-card-body">
+                            <span class="blog-category category-events">Events</span>
+                            <h4>Science Fair Winners Announced</h4>
+                            <p class="blog-date"><i class="fas fa-calendar-alt"></i> December 20, 2025</p>
+                            <p>Congratulations to all participants in our annual science fair! The innovative projects demonstrated exceptional creativity and scientific thinking.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------ Blog Post 6 -------------------------------->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=250&fit=crop" alt="Blog Image">
+                        <div class="blog-card-body">
+                            <span class="blog-category category-activities">Activities</span>
+                            <h4>Music Club Performance</h4>
+                            <p class="blog-date"><i class="fas fa-calendar-alt"></i> December 15, 2025</p>
+                            <p>Our music club students performed beautifully at the winter concert. The event showcased weeks of practice and dedication from all participants.</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------ Newsletter Section -------------------------------->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p class="text-muted mb-4">Get the latest updates directly in your inbox</p>
+            <form class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!------------------------------ Footer Section -------------------------------->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+<h4>Study Pulse</h4>
+                    <p>Empowering young minds with quality education and preparing them for a bright future.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="welcome.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+<li><i class="fas fa-map-marker-alt"></i> Moshi, Pune, Maharashtra</li>
+                        <li><i class="fas fa-phone"></i> +91 8975604352</li>
+                        <li><i class="fas fa-envelope"></i> info@studypulse.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Study Pulse. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!------------------------------ Bootstrap JS ---------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
